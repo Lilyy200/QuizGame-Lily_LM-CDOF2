@@ -23,7 +23,8 @@ Open a terminal or command prompt and navigate to the directory where you saved 
 Run the Script
 
 In the terminal, execute the script by running:
-    python_quizgame.py
+
+    python_quizgame.py 
 
 The game will start, and you can begin playing by answering the questions.
 
