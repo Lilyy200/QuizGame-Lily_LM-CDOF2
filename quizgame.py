@@ -4,7 +4,17 @@ def get_questions():
     return [
         {"question": "What is the capital of France?", "answer": "Paris"},
         {"question": "What is 2 + 2?", "answer": "4"},
-        {"question": "What is the color of the sky on a clear day?", "answer": "Blue"}
+        {"question": "What is the color of the sky on a clear day?", "answer": "Blue"},
+        {"question": "What is the tallest mountain in the world?", "answer": "Mount Everest"},
+        {"question": "Who wrote 'Romeo and Juliet'?", "answer": "William Shakespeare"},
+        {"question": "What is the boiling point of water?", "answer": "100°C"},
+        {"question": "What is the largest ocean on Earth?", "answer": "Pacific Ocean"},
+        {"question": "What is the square root of 64?", "answer": "8"},
+        {"question": "Who painted the Mona Lisa?", "answer": "Leonardo da Vinci"},
+        {"question": "What is the currency of the United States?", "answer": "Dollar"},
+        {"question": "How many continents are there?", "answer": "7"},
+        {"question": "What is the chemical symbol for water?", "answer": "H2O"},
+        {"question": "Who was the first person to walk on the Moon?", "answer": "Neil Armstrong"}
     ]
 
 def ask_questions(questions):
