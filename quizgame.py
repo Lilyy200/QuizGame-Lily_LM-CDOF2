@@ -21,7 +21,10 @@ def ask_questions(questions):
 def main():
     questions = get_questions()
     score = ask_questions(questions)
-    print(f"Game Over. Your score was {score}/{len(questions)}")
+    if score == 3:
+        print(f"Congratulations! You've won the game with a perfect score of {score}/3!")
+    else:
+        print(f"Game Over. You lost. Your score was {score}/3")
 
 if __name__ == "__main__":
     main()
