@@ -24,7 +24,7 @@ Run the Script
 
 In the terminal, execute the script by running:
 
-    python_quizgame.py 
+    python quizgame.py 
 
 The game will start, and you can begin playing by answering the questions.
 
