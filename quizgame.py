@@ -1,3 +1,7 @@
+import time
+
+
+
 def get_questions():
     # Categorized questions by difficulty levels
     return {
@@ -22,10 +26,19 @@ def get_questions():
         ]
     }
 
-def ask_questions(questions, level):
+def ask_questions(questions, level, time_limit):
     score = 0
     for q in questions[level]:
+        print(f"Time remaining: {time_limit} seconds")
         user_answer = input(q["question"] + " ")
+        
+        start_time = time.time()
+        
+        while time.time() - start_time < time_limit:
+            # Check if the answer is provided within the time limit
+            if user_answer.strip():
+                break
+        
         if user_answer.lower() == q["answer"].lower():
             print("Correct!")
             score += 1
@@ -37,10 +50,11 @@ def main():
     all_questions = get_questions()
     levels = ["Easy", "Medium", "Hard"]
     total_score = 0
+    time_limit_per_question = 10  # Set the time limit for each question (in seconds)
 
     for level in levels:
         print(f"Starting {level} level...")
-        score = ask_questions(all_questions, level)
+        score = ask_questions(all_questions, level, time_limit_per_question)
         total_score += score
         print(f"Your score for {level} level is {score}")
 
