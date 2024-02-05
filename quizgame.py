@@ -50,7 +50,7 @@ def main():
     all_questions = get_questions()
     levels = ["Easy", "Medium", "Hard"]
     total_score = 0
-    time_limit_per_question = 11  # Set the time limit for each question (in seconds)
+    time_limit_per_question = 15  # Set the time limit for each question (in seconds)
 
     for level in levels:
         print(f"Starting {level} level...")
