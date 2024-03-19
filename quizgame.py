@@ -6,24 +6,30 @@ def get_questions():
     # Categorized questions by difficulty levels
     return {
         "Easy": [
-            {"question": "What is 2 + 2?", "answer": "4"},
-            {"question": "How many continents are there?", "answer": "7"},
-            {"question": "What is the square root of 64?", "answer": "8"},
-            {"question": "What is the capital of France?", "answer": "Paris"},
-            {"question": "What is the color of the sky on a clear day?", "answer": "Blue"},
-        ],
-        "Medium": [
-            {"question": "What is the boiling point of water?", "answer": "100°C"},
-            {"question": "What is the chemical symbol for water?", "answer": "H2O"},
-            {"question": "What is the tallest mountain in the world?", "answer": "Mount Everest"},
-        ],
-        "Hard": [
-            {"question": "Who was the first person to walk on the Moon?", "answer": "Neil Armstrong"},
-            {"question": "What is the largest ocean on Earth?", "answer": "Pacific Ocean"},
-            {"question": "Who painted the Mona Lisa?", "answer": "Leonardo da Vinci"},
-            {"question": "Who wrote 'Romeo and Juliet'?", "answer": "William Shakespeare"},
-            {"question": "What is the currency of the United States?", "answer": "Dollar"},
-        ]
+        {"question": "What is 2 + 2?", "answer": "4"},
+        {"question": "How many continents are there?", "answer": "7"},
+        {"question": "What is the square root of 64?", "answer": "8"},
+        {"question": "What is the capital of France?", "answer": "Paris"},
+        {"question": "What is the color of the sky on a clear day?", "answer": "Blue"},
+        {"question": "What is the first letter of the English alphabet?", "answer": "A"},
+        {"question": "What shape is a stop sign?", "answer": "Octagon"},
+    ],
+    "Medium": [
+        {"question": "What is the boiling point of water?", "answer": "100°C"},
+        {"question": "What is the chemical symbol for water?", "answer": "H2O"},
+        {"question": "What is the tallest mountain in the world?", "answer": "Mount Everest"},
+        {"question": "What gas do plants absorb from the atmosphere for photosynthesis?", "answer": "Carbon dioxide"},
+        {"question": "In which organ of the human body would you find the hippocampus?", "answer": "Brain"},
+    ],
+    "Hard": [
+        {"question": "Who was the first person to walk on the Moon?", "answer": "Neil Armstrong"},
+        {"question": "What is the largest ocean on Earth?", "answer": "Pacific Ocean"},
+        {"question": "Who painted the Mona Lisa?", "answer": "Leonardo da Vinci"},
+        {"question": "Who wrote 'Romeo and Juliet'?", "answer": "William Shakespeare"},
+        {"question": "What is the currency of the United States?", "answer": "Dollar"},
+        {"question": "What is the name of the longest river in South America?", "answer": "Amazon River"},
+        {"question": "In physics, what is the term for the speed at which an object is moving at a specific moment?", "answer": "Instantaneous velocity"},
+    ],
     }
 
 def ask_questions(questions, level, time_limit):
